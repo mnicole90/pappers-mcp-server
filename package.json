@@ -12,7 +12,20 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm --out-dir dist --clean",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnicole90/pappers-mcp-server.git"
+  },
+  "homepage": "https://github.com/mnicole90/pappers-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/mnicole90/pappers-mcp-server/issues"
+  },
+  "author": "Maxime Nicole <maxime@kodesaas.com> (https://kodesaas.com)",
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "mcp",
